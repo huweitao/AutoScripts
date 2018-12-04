@@ -1,0 +1,12 @@
+DerivedData路径
+cd ~/Library/Developer/Xcode/DerivedData
+录屏：
+1、进入终端，cd到要放置录屏文件的位置 
+例如： 
+cd Movies/
+
+2、输入命令 
+xcrun simctl io booted recordVideo filename.mov
+
+提示：停止录屏：control + c
+

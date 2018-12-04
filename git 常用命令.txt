@@ -1,0 +1,4 @@
+git如何查看当前分支是从哪个分支拉的？
+git log --oneline --graph --decorate
+查看所有远程分支
+git branch -a
