@@ -58,7 +58,7 @@ function auto_create_copy()
   echo 'Feature local Path: '$featurePath
   # mkdir $featureFileName
   echo 'Feature File Name: '$featureFileName
-  echo 'Copy begin from '$srcPath' to '$tmpPath
+  echo 'Copy begin from '$srcPath' to '$featurePath
   cp -r $srcPath $featurePath
   chmod -R 777 $featurePath
   branchFullName='feature/'$localBranchName
