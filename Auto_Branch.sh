@@ -66,10 +66,13 @@ function auto_create_copy()
   cd $featurePath
   # #  如果分支存在则只切换分支，若不存在则创建并切换到branchFullName分支
   git checkout -b $branchFullName
+  # change Git name
+  git config user.name ahu.weitao
+  git config user.email ahu.weitao@mynt.xyz
 }
 
-echo 'Enter local branch feature name:'
+echo 'Enter local branch feature name: format is like feature/your_feature_name'
 read localBranchName
-echo 'Enter local project file:'
+echo 'Enter local project dir:'
 read srcPath
 auto_create_copy $srcPath $localBranchName
