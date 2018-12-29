@@ -71,8 +71,16 @@ function auto_create_copy()
   git config user.email ahu.weitao@mynt.xyz
 }
 
-echo 'Enter local branch feature name: format is like feature/your_feature_name'
-read localBranchName
-echo 'Enter local project dir:'
-read srcPath
-auto_create_copy $srcPath $localBranchName
+if [ $# -eq 2 ]; then
+  auto_create_copy $1 $2
+else
+  echo 'Enter local branch feature name: format is like feature/your_feature_name'
+  read localBranchName
+
+  echo 'Enter local project dir:'
+  read srcPath
+  auto_create_copy $srcPath $localBranchName
+fi
+
+
+
