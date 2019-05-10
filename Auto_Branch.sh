@@ -22,7 +22,8 @@ function auto_create_copy()
   echo 'Source path: '$srcPath
   echo 'BasePath: '$basePath
   cd $basePath
-  featureFileName='GCash_'$2
+  # manully write project file name
+  featureFileName='NeedFileName_'$2
   featurePath=$basePath'/'$featureFileName
   echo 'Feature local Path: '$featurePath
   # mkdir $featureFileName
